@@ -1,6 +1,6 @@
 ### Intro
 Vamos a crear una app de una cafeteria.
-La idea es precticar lo que vimos y aplicar conceptos nuevos
+La idea es practicar lo que vimos y aplicar conceptos nuevos
 
 ## CLASE 12/03
 
