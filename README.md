@@ -1,8 +1,8 @@
-### Intro
+## Intro
 Vamos a crear una app de una cafeteria.
 La idea es precticar lo que vimos y aplicar conceptos nuevos
 
-## CLASE 12/03
+### CLASE 12/03
 
 - Creamos el proyecto nuevo
   - django-admin startproject web_empresa
@@ -16,3 +16,21 @@ La idea es precticar lo que vimos y aplicar conceptos nuevos
   - Contacto contact/
   - Blog blog/
   - Sample sample/ (esta es para páginas de prueba)
+
+### CLASE 21/03
+
+- creamos app blog
+- templates
+- urls
+- settings.py
+- models
+- admin
+- migraciones
+
+
+### CLASE 24/03
+
+- Campos avanzados del admin (falta ver)
+- relaciones MTM
+- relaciones OTM
+- Filtros

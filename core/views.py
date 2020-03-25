@@ -1,30 +1,16 @@
-from django.shortcuts import HttpResponse
-""" 
-Inicio home/
-Historia about/
-Servicios services/
-Visítanos store/
-Contacto contact/
-Blog blog/
-Sample sample/ (esta es para páginas de prueba) 
-"""
+from django.shortcuts import render
+
 def home(request):
-    return HttpResponse('Inicio')
+    return render(request, "core/home.html")
 
 def about(request):
-    return HttpResponse('Historia')
-
-def services(request):
-    return HttpResponse('Servicios')
+    return render(request, "core/about.html")
 
 def store(request):
-    return HttpResponse('Visítanos')
+    return render(request, "core/store.html")
 
 def contact(request):
-    return HttpResponse('Contacto')
-
-def blog(request):
-    return HttpResponse('Blog')
+    return render(request, "core/contact.html")
 
 def sample(request):
-    return HttpResponse('Sample')
+    return render(request, "core/sample.html")
