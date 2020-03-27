@@ -34,3 +34,19 @@ La idea es practicar lo que vimos y aplicar conceptos nuevos
 - relaciones MTM
 - relaciones OTM
 - Filtros
+
+
+### CLASE 27/03
+
+- Repasamos y reforzamos la clase anterior
+- Vimos con profundidad modelos avanzados de admin
+- Vimos campos nuevos de filtro
+- Grupos de usuario (FALTA)
+
+users:
+admin_1
+oper_1
+pass: root_1111
+
+correlativos nombre pass
+

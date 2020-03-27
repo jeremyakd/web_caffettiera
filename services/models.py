@@ -7,7 +7,7 @@ class Service(models.Model):
     content = models.TextField(max_length=200, verbose_name='Contenido')
     image = models.ImageField(verbose_name='Imagen', upload_to='services')
     created = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
-    updated = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de actualización')
+    updated = models.DateTimeField(auto_now=True, verbose_name='Fecha de actualización')
 
     class Meta:
         verbose_name = "Servicio"
