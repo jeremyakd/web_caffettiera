@@ -25,7 +25,7 @@ SECRET_KEY = '!kn!)-6qg@^o=j_9xa=imw#y4n6@*4939j5i4@cz-nutdn!(#='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'core',
     'services.apps.ServicesConfig',
     'blog',
+    'social.apps.SocialConfig',
 ]
 
 MIDDLEWARE = [
@@ -65,6 +66,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social.processor.contexto_propio',
             ],
         },
     },

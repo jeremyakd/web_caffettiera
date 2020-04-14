@@ -5,7 +5,7 @@ from .consulta import return_data_from_database
 def services(request):
     # ORM
     services = Service.objects.all()
-    return render(request, "services/services.html", {'services': services})
+    return render(request, "services/services.html", {'services':services})
 
 def consulta(request):
-    return render(request, "services/consulta.html", {'columnas': return_data_from_database})
+    return render(request, "services/consulta.html", {'columnas':return_data_from_database})

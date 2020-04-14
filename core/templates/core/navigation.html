@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'home' %}">La Caffettiera</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4 {% if request.path == '/' %}active{% endif %}">
+                <a class="nav-link text-uppercase text-expanded" href="{% url 'home' %}">Inicio</a>
+            </li>
+            <li class="nav-item px-lg-4 {% if request.path == '/about/' %}active{% endif %}">
+                <a class="nav-link text-uppercase text-expanded" href="{% url 'about' %}">Historia</a>
+            </li>
+            <li class="nav-item px-lg-4 {% if request.path == '/services/' %}active{% endif %}">
+                <a class="nav-link text-uppercase text-expanded" href="{% url 'services' %}">Servicios</a>
+            </li>
+            <li class="nav-item px-lg-4 {% if request.path == '/store/' %}active{% endif %}">
+                <a class="nav-link text-uppercase text-expanded" href="{% url 'store' %}">Visítanos</a>
+            </li>
+            <li class="nav-item px-lg-4 {% if request.path == '/contact/' %}active{% endif %}">
+                <a class="nav-link text-uppercase text-expanded" href="{% url 'contact' %}">Contacto</a>
+            </li>
+            <li class="nav-item px-lg-4 {% if request.path|slice:':6' == '/blog/' %}active{% endif %}">
+                <a class="nav-link text-uppercase text-expanded" href="{% url 'blog' %}">Blog</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+</nav>
