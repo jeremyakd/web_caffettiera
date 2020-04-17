@@ -7,6 +7,7 @@ urlpatterns = [
     path('services/', include('services.urls')),
     path('blog/', include('blog.urls')),
     path('admin/', admin.site.urls),
+    path('page/', include('pages.urls')),
 ]
 
 # aca mapeamos archivos estaticos si estamos debuggeando 
