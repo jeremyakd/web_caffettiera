@@ -72,3 +72,14 @@ correlativos nombre pass
 - asignamos configuracion avanzada
 - creamos un procesador de contexto
 - lo importamos y lo probamos
+
+## CLASE 16/04
+
+## CLASE 20/04
+
+## CLASE 23/04
+
+- incorporamos CKeditor
+- exendimos cgf del admin
+- personalizamos nuestro admin
+- vimos (de pasada) mkdocs

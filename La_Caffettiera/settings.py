@@ -37,11 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core',
-    'services.apps.ServicesConfig',
     'blog',
-    'social.apps.SocialConfig',
+    'ckeditor',
+    'core',
     'pages.apps.PagesConfig',
+    'services.apps.ServicesConfig',
+    'social.apps.SocialConfig',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +60,8 @@ ROOT_URLCONF = 'La_Caffettiera.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        #Aca le decimos a Django que busque en nuestra carpeta
+        'DIRS': [os.path.join(BASE_DIR, 'templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,6 +127,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Que mapee los archivos estaticos
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
 # Archivos media
 
@@ -132,3 +138,16 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+# Ckeditor
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Custom',
+        'toolbar_Custom': [
+            ['Bold', 'Italic', 'Underline'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 
+            'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+            ['Link', 'Unlink']
+        ]
+    }
+}

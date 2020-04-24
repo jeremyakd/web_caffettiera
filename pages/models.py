@@ -1,8 +1,11 @@
 from django.db.models import Model, CharField, TextField, DateTimeField, SmallIntegerField
+from ckeditor.fields import RichTextField
+
+# Cambiamos el tipo de dato para setear ckeditor
 
 class Page(Model):
     title = CharField(verbose_name="Título", max_length=200)
-    content = TextField(verbose_name='Contenido')
+    content = RichTextField(verbose_name='Contenido')
     ordering = SmallIntegerField(verbose_name='Orden', default=0)
     created = DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
     updated = DateTimeField(auto_now=True, verbose_name='Fecha de actualización')
