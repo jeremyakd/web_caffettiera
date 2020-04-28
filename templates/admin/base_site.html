@@ -8,13 +8,38 @@
     #header{
         background: #4c2d1b;
     }
+    .module caption, div.breadcrumbs{
+        background: #650004;
+    }
+    body{
+        background: rgb(250, 226, 132);
+    }
+    a:link, a:visited {
+        color: black;
+        text-decoration: none;
+    }
+    .form-row {
+        background: rgb(248, 233, 171);
+    }
+    #content-related {
+        background: #ffe2cf;
+    }
+    h1{
+        font-weight: bold;
+    }
+    .login #content {
+        background:rgb(248, 233, 171);
+    }
+    #footer {
+        background:rgb(248, 233, 171);
+    }
 </style>
 {% endblock %}
 
 {% block branding %}
     <h1 id="site-name">
         <a href="{% url 'admin:index' %}">
-            <img src="{% static 'logo.png' %}" height="50px">
+            <img src="{% static 'logo.png' %}" height="50px"/>
         </a>
     </h1>
 {% endblock %}
