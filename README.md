@@ -1,8 +1,8 @@
-## Intro
+#### Intro
 Vamos a crear una app de una cafeteria.
 La idea es practicar lo que vimos y aplicar conceptos nuevos
 
-### CLASE 12/03
+#### CLASE 12/03
 
 - Creamos el proyecto nuevo
   - django-admin startproject web_empresa
@@ -17,7 +17,7 @@ La idea es practicar lo que vimos y aplicar conceptos nuevos
   - Blog blog/
   - Sample sample/ (esta es para páginas de prueba)
 
-### CLASE 21/03
+#### CLASE 21/03
 
 - creamos app blog
 - templates
@@ -28,7 +28,7 @@ La idea es practicar lo que vimos y aplicar conceptos nuevos
 - migraciones
 
 
-### CLASE 24/03
+#### CLASE 24/03
 
 - Campos avanzados del admin (falta ver)
 - relaciones MTM
@@ -36,7 +36,7 @@ La idea es practicar lo que vimos y aplicar conceptos nuevos
 - Filtros
 
 
-### CLASE 27/03
+#### CLASE 27/03
 
 - Repasamos y reforzamos la clase anterior
 - Vimos con profundidad modelos avanzados de admin
@@ -50,7 +50,7 @@ pass: root_1111
 
 correlativos nombre pass
 
-## CLASE 30/03
+#### CLASE 30/03
 
 - filtro | linebreaks
 - creamos vista categorias
@@ -58,10 +58,10 @@ correlativos nombre pass
 - mapeamos su url con un parametro que recibe en la consulta
 - fitro inverso categories.get_posts.all
 
-### Tarea:
+#### Tarea:
 - Terminar las categorias, agregarle enlace.
 
-## CLASE 13/04
+#### CLASE 13/04
 
 - terminamos los templates blog y categorias
 - repasamos campos propios en el admin
@@ -73,11 +73,11 @@ correlativos nombre pass
 - creamos un procesador de contexto
 - lo importamos y lo probamos
 
-## CLASE 16/04
+#### CLASE 16/04
 
-## CLASE 20/04
+#### CLASE 20/04
 
-## CLASE 23/04
+#### CLASE 23/04
 
 - incorporamos CKeditor
 - exendimos cgf del admin

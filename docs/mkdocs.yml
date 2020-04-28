@@ -1,6 +1,5 @@
 site_name: La Caffetiera
 nav:
-    - Introducción: index.md
     - Software:
         - Software.md
     - Datos:
@@ -19,4 +18,4 @@ nav:
         - CLASE 23/04: CLASE_23-04.md
         - CLASE 27/04: CLASE_27-04.md
 theme:
-    name: readthedocs
+    name: bootstrap4

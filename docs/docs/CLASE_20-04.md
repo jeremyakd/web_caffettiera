@@ -1,4 +1,4 @@
-## CLASE 20/04
+#### CLASE 20/04
 
 - Fusionamos el front y back
 - Creamos template tags personalizados
@@ -8,7 +8,7 @@
 - Dentro añadimos un init.py, esto indicará a Python que se trata de un package, 
 - Crearemos un script para almacenar nuestros template tags, yo siguiendo el ejemplo oficial de la documentación le voy a llamar pages_extras.py.
 
-#### pages_extras.py
+    >*__pages_extras.py__*
 
 ```python
 from django import template
