@@ -16,37 +16,45 @@
               <span class="section-heading-upper">Envíanos tus dudas</span>
               <span class="section-heading-lower">Contacto</span>
             </h2>
-            <!-- Formulario de contacto
-            <form>
+            <!-- Formulario de contacto -->
+            {% if 'ok' in request.GET %}
+              <p><b>Su mensaje ha sido enviado correctamente!!!</b></p>
+            {% endif %}
+            <form action="" method="POST">
+            {% csrf_token %}
                 <div class="form-group">
                     <label>Nombre *</label>
                     <div class="input-group">
-                        <input type="text" class="form-control">
+                        {{formulario.name}}
                     </div>
+                    {{formulario.name.errors}}
                 </div>
                 <div class="form-group">
                     <label>Email *</label>
                     <div class="input-group">
-                        <input type="text" class="form-control">
+                        {{formulario.email}}
                     </div>
-                  <ul class="errorlist">
-                        <li>El email no es correcto.</li>
-                    </ul>
+                    {{formulario.email.errors}}
                 </div>
                 <div class="form-group">
                     <label>Mensaje *</label>
                     <div class="input-group">
-                        <textarea class="form-control"></textarea>
+                        {{formulario.content}}
                     </div>
+                    {{formulario.content.errors}}
                 </div>
                 <div class="text-center">
                     <input type="submit" class="btn btn-primary btn-block py-2" value="Enviar">
                 </div>
-            </form> -->
+            </form>
             <!-- Fin formulario de contacto -->
-            <table>
-              {{formulario.as_table}}
-          </table>
+              <!-- <form action="" method="POST">
+                {% csrf_token %}
+                <table>
+                  {{formulario.as_table}}
+              </table>
+              <input type="submit"class="" value="Enviar"/>
+            </form>-->
           </div>
         </div>
       </div>
