@@ -25,8 +25,8 @@ def get_pages_list():
 - Usamos funciones decoradoras por primera vez para registrar nuestro tag.
 
 ```django
-{% load pages_extras %}
-{% get_page_list %}
+    {% load pages_extras %}
+    {% get_page_list %}
 ```
 - Cargamos ahora si las páginas.
 - Le damos un toque más interesante a los enlaces de las páginas, pasando el título en forma de slug.
