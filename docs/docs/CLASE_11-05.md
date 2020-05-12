@@ -1,0 +1,2 @@
+- Trminamos nuestro formulario
+- Dockerizamos nuestra app

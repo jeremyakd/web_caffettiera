@@ -150,3 +150,20 @@ CKEDITOR_CONFIGS = {
         ]
     }
 }
+
+# EMAIL CONFIG PARA UN SERVER COMO MAILTRAP
+
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = 'f326271817f735'
+EMAIL_HOST_PASSWORD = '8add384503bbbb'
+EMAIL_PORT = '2525'
+
+
+# EMAIL CONFIG PARA GMAIL
+
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_USE_TLS=True
+#EMAIL_PORT = 587
+#EMAIL_HOST_USER = 'tu_mail@gmail.com'
+#EMAIL_HOST_PASSWORD = 'tu pass en crudo'

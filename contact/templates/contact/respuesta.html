@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+<section class="page-section about-heading">
+  <div class="container">
+    <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'core/img/contact.jpg' %}" alt="">
+    <div class="about-heading-content">
+      <div class="row">
+        <div class="col-xl-9 col-lg-10 mx-auto">
+          <div class="bg-faded rounded p-5">
+            {% if 'ok' in request.GET %}
+              <p><b>Su mensaje ha sido enviado correctamente!!!</b></p>
+            {% elif 'fail' in request.GET %}
+              <p><b>Ah ocurrido un error, intente nuevamente.</b></p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
