@@ -158,7 +158,6 @@ EMAIL_HOST_USER = 'f326271817f735'
 EMAIL_HOST_PASSWORD = '8add384503bbbb'
 EMAIL_PORT = '2525'
 
-
 # EMAIL CONFIG PARA GMAIL
 
 #EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

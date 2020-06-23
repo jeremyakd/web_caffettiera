@@ -1,0 +1,53 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Productos{% endblock %}
+{% block content %}
+<section class="page-section cta">
+    <div class="container">
+    <div class="cta-innerv text-center rounded">
+          <h2>Productos disponibles.</h2>
+            <table class="table table-striped">
+              <thead>
+                  <tr>
+                      <th>Producto</th>
+                      <th>Precio</th>
+                      <th>Descripción</th>
+                      <th>En stock</th>
+                  </tr>
+              </thead>
+                    <tr>
+                        <td>pe</td>
+                        <td>pi</td>
+                        <td>po</td>
+                        <td>pu</td>
+                    </tr>
+              <tbody>
+              </tbody>
+          </table>
+    </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block js %}
+
+<script>
+
+    $(document).ready(function (){
+        $.ajax({
+            url: "http://localhost:3000/api/v1/productos/",
+            dataType: "application/json",
+            type: "get",
+            success: function (data){
+                console.log("data: \n", data);
+            },
+            error: function (data){
+                console.log("error");
+                console.error(data);
+            }
+        })
+    });
+
+</script>
+
+{% endblock js %}
