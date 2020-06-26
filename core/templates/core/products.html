@@ -4,27 +4,23 @@
 {% block content %}
 <section class="page-section cta">
     <div class="container">
-    <div class="cta-innerv text-center rounded">
-          <h2>Productos disponibles.</h2>
-            <table class="table table-striped">
-              <thead>
-                  <tr>
-                      <th>Producto</th>
-                      <th>Precio</th>
-                      <th>Descripción</th>
-                      <th>En stock</th>
-                  </tr>
-              </thead>
+        <div class="cta-innerv text-center rounded">
+            <h2>Productos disponibles.</h2>
+                <br>
+                <table class="table table-striped" style="display: none;" id="table">
+                <thead>
                     <tr>
-                        <td>pe</td>
-                        <td>pi</td>
-                        <td>po</td>
-                        <td>pu</td>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Descripción</th>
+                        <th>En stock</th>
                     </tr>
-              <tbody>
-              </tbody>
-          </table>
-    </div>
+                </thead>
+
+                <tbody id="table-product">
+                </tbody>
+            </table>
+        </div>
     </div>
 </section>
 {% endblock %}
@@ -34,18 +30,50 @@
 <script>
 
     $(document).ready(function (){
+        // Funcion JQwery ajax, le pega al endpoint de la api productos
         $.ajax({
             url: "http://localhost:3000/api/v1/productos/",
-            dataType: "application/json",
             type: "get",
             success: function (data){
-                console.log("data: \n", data);
+                setContentTableFromApiData(data);
             },
             error: function (data){
                 console.log("error");
                 console.error(data);
             }
-        })
+        });
+
+        function setContentTableFromApiData(data) {
+            $("#table").fadeIn(2000);
+            let table = $("#table-product");
+            data.forEach(element => {
+                table.append(
+                    "<tr>" +
+                    "<td>" +
+                    element.name +
+                    "</td>" +
+                    "<td>" +
+                    element.price +
+                    "</td>" +
+                    "<td>" +
+                    element.description +
+                    "</td>" +
+                    "<td>" +
+                    stock(element.stock) +
+                    "</td>" +
+                    "</tr>"
+                    )
+            });
+        }
+
+        function stock(stock) {
+            if (stock) {
+                return "<strong><p class='text-success'>En stock</p></strong>";
+            } else {
+                return "<strong><p class='text-danger'>Sin stock</p></strong>";
+            }
+            
+        }
     });
 
 </script>
