@@ -19,4 +19,4 @@ nav:
         - CLASE 27/04: CLASE_27-04.md
         - CLASE 11/05: CLASE_11-05.md
 theme:
-    name: bootstrap4
+    name: readthedocs

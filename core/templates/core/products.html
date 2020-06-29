@@ -7,7 +7,7 @@
         <div class="cta-innerv text-center rounded">
             <h2>Productos disponibles.</h2>
                 <br>
-                <table class="table table-striped" style="display: none;" id="table">
+            <table class="table table-striped" style="display: none;" id="table">
                 <thead>
                     <tr>
                         <th>Producto</th>
@@ -16,14 +16,13 @@
                         <th>En stock</th>
                     </tr>
                 </thead>
-
                 <tbody id="table-product">
                 </tbody>
             </table>
         </div>
     </div>
 </section>
-{% endblock %}
+{% endblock content %}
 
 {% block js %}
 
@@ -65,7 +64,6 @@
                     )
             });
         }
-
         function stock(stock) {
             if (stock) {
                 return "<strong><p class='text-success'>En stock</p></strong>";
