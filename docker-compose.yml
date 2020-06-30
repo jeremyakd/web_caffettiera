@@ -4,10 +4,10 @@ services:
   db:
     image: nouchka/sqlite3
   web:
-    image: jeremyakd/mirepo:1.0.0
+    image: jeremyakd/la-caffettiera:1.0.1
     command: python manage.py runserver 0.0.0.0:8000
-    #volumes:
-    #  - .:/code
+    volumes:
+      - .:/code
     ports:
       - "8000:8000"
     depends_on:
