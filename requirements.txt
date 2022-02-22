@@ -45,3 +45,4 @@ urllib3==1.25.9
 wcwidth==0.1.9
 wrapt==1.12.1
 gunicorn
+django-heroku
