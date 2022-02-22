@@ -133,7 +133,7 @@ STATIC_URL = '/static/'
 
 # Que mapee los archivos estaticos
 STATICFILES_DIRS = [
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static'),
+    STATIC_ROOT : os.path.join(BASE_DIR, 'static'),
 ]
 
 # Archivos media
