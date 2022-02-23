@@ -23,9 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!kn!)-6qg@^o=j_9xa=imw#y4n6@*4939j5i4@cz-nutdn!(#='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-django_heroku.settings(locals())
+DEBUG = True #False
 
 ALLOWED_HOSTS = ['*']
 
@@ -130,10 +128,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Que mapee los archivos estaticos
 STATICFILES_DIRS = [
-    STATIC_ROOT : os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'static'),
 ]
 
 # Archivos media
@@ -169,3 +167,5 @@ EMAIL_PORT = '2525'
 #EMAIL_PORT = 587
 #EMAIL_HOST_USER = 'tu_mail@gmail.com'
 #EMAIL_HOST_PASSWORD = 'tu pass en crudo'
+
+django_heroku.settings(locals()) #, staticfiles=False)
