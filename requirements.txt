@@ -9,7 +9,7 @@ Django==3.2.25
 django-ckeditor==5.9.0
 django-js-asset==1.2.2
 future==0.18.2
-idna==2.9
+idna==3.7
 ipython==8.10.0
 ipython-genutils==0.2.0
 jedi==0.16.0
