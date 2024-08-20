@@ -22,7 +22,7 @@ MarkupSafe==1.1.1
 mkdocs==1.2.3
 mkdocs-bootstrap4==0.1.4
 mkdocs-git-committers-plugin==0.1.9
-nltk==3.5
+nltk==3.9
 parso==0.6.2
 pexpect==4.8.0
 pickleshare==0.7.5
